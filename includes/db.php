@@ -5,13 +5,15 @@
  */
 declare(strict_types=1);
 
-// ─── إعدادات الاتصال — عدّل هذه القيم حسب بيئتك ──────────────
-define('DB_HOST',    getenv('DB_HOST') ?: 'localhost');
-define('DB_PORT',    getenv('DB_PORT') ?: '3306');
+// ─── إعدادات الاتصال — حماية البيانات برمجياً عبر متغيرات البيئة ──────────────
+define('DB_HOST',    getenv('DB_HOST') ?: 'mysql-38536dc4-sajjadhendy-d651.aivencloud.com');
+define('DB_PORT',    getenv('DB_PORT') ?: '14481');
 define('DB_NAME',    getenv('DB_NAME') ?: 'emergency_matrix_db');
-define('DB_USER',    getenv('DB_USER') ?: 'if0_42204310');
-define('DB_PASS',    getenv('DB_PASS') ?: 'CRKVo2YzgvhnKol');
+define('DB_USER',    getenv('DB_USER') ?: 'avnadmin');
+// تم إزالة كلمة المرور الصريحة نهائياً لتجاوز حظر GitHub الأمنّي
+define('DB_PASS',    getenv('DB_PASSWORD')); 
 define('DB_CHARSET', 'utf8mb4');
+
 
 // ─── Singleton PDO ─────────────────────────────────────────────
 class Database
