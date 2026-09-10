@@ -8,7 +8,7 @@ declare(strict_types=1);
 // ─── إعدادات الاتصال — حماية البيانات برمجياً عبر متغيرات البيئة ──────────────
 define('DB_HOST',    getenv('DB_HOST') ?: 'mysql-38536dc4-sajjadhendy-d651.i.aivencloud.com');
 define('DB_PORT',    getenv('DB_PORT') ?: '14481');
-define('DB_NAME',    getenv('DB_NAME') ?: 'emergency_matrix_db');
+define('DB_NAME',    getenv('DB_NAME') ?: 'emergency_matrix_db1');
 define('DB_USER',    getenv('DB_USER') ?: 'avnadmin');
 // تم إزالة كلمة المرور الصريحة نهائياً لتجاوز حظر GitHub الأمنّي
 define('DB_PASS',    getenv('DB_PASSWORD')); 
