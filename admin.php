@@ -228,7 +228,9 @@ body { display:flex; }
     <button class="nav-link" id="nl-builder" onclick="showSection('builder')">
       <span class="icon">🔀</span> منشئ الأسئلة
     </button>
-
+<a href="export_questions.php" class="btn btn-success mb-3">
+    📥 تحميل كافة الأسئلة والخيارات كملف إكسل
+</a>
     <div class="nav-title" style="margin-top:1rem">أدوات</div>
     <a class="nav-link" href="index.php" target="_blank">
       <span class="icon">🖥️</span> واجهة المشغّل
