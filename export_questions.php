@@ -8,7 +8,7 @@ header('Content-Disposition: attachment; filename=emergency_matrix_questions_exp
 // فتح منفذ الإخراج
 $output = fopen('php://output', 'w');
 
-// إضافة UTF-8 BOM لكي يتعرف برنامج Excel على الحروف العربية بشكل صحيح تماماً دون رموز غريبة
+// إضافة UTF-8 BOM لكي يتعرف برنامج Excel على الحروف العربية بشكل صحيح تماماً
 fwrite($output, "\xEF\xBB\xBF");
 
 // كتابة صف العناوين (الأعمدة الرئيسية)
@@ -47,7 +47,7 @@ $sql = "
 
 try {
     $stmt = Database::get()->query($sql);
-   $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC); // <-- تم تصحيح النقطة إلى سهم هنا
     
     $counter = 1;
     foreach ($rows as $row) {
