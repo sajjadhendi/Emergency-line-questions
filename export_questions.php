@@ -47,7 +47,7 @@ $sql = "
 
 try {
     $stmt = Database::get()->query($sql);
-    $rows = $stmt.fetchAll(PDO::FETCH_ASSOC); // أو fetchAll حسب إعدادات الـ PDO لديك
+   $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
     $counter = 1;
     foreach ($rows as $row) {
